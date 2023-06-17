@@ -12,7 +12,7 @@ const Layout = ({ children }: PropsWithChildren) => {
     <html>
       <body>
         <Navbar />
-        <div className="z-10 w-full flex flex-col items-center justify-center font-mono text-sm">
+        <div className="font-sans font-light text-lg flex min-h-full flex-col items-center justify-center">
           {children}
         </div>
       </body>

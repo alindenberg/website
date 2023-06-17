@@ -15,12 +15,13 @@ const Navbar = () => {
 
   return (
     <nav className="navbar bg-base-100 flex items-center justify-between">
-      {/* <a className="btn btn-ghost normal-case text-xl">My Website</a> */}
       <ul className="menu menu-horizontal flex space-x-4">
         {navLinks.map((navLink) => (
           <li
             key={navLink.href}
-            className={pathName === navLink.href ? "disabled" : ""}
+            className={
+              pathName === navLink.href ? "text-gray-500" : "hover:text-sky-400"
+            }
           >
             <Link href={navLink.href}>{navLink.label}</Link>
           </li>
